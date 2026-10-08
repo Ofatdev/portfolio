@@ -520,6 +520,49 @@ body:not(.user-is-tabbing) a:focus {
     max-width: 18rem;
 }
 
+/* --------------------------------------- */
+/* ----- Backend Engineering ----- */
+/* --------------------------------------- */
+
+.engineering__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gutter-normal);
+}
+
+.engineering__group {
+    padding: var(--gutter-normal);
+    border: var(--border-light);
+}
+
+.engineering__group h3 {
+    font-size: var(--font-size-medium);
+}
+
+.engineering__group ul {
+    list-style-position: inside;
+}
+
+.engineering__group li {
+    margin-bottom: 0.8rem;
+}
+
+.ai-development p {
+    max-width: var(--container-medium-width);
+}
+
+@media(max-width: 900px) {
+    .engineering__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 600px) {
+    .engineering__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media(max-width: 1240px) {
     .client__logos {
         overflow-x: scroll;
